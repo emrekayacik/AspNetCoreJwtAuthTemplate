@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "OdyIFMtqDxiIQ8dCtQaqU0BQdHPYrFXIjtuHtJZYLm4=",
+  "Source": "AspNetCoreJwtAuthTemplate",
+  "BasePath": "_content/AspNetCoreJwtAuthTemplate",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
