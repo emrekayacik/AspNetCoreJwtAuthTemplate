@@ -14,8 +14,8 @@ namespace AspNetCoreJwtAuthTemplate.Controllers
         };
 
         [HttpGet]
-        public string[] Get(){
-            return DumpData;
+        public async Task<IActionResult> GetAllAsync(){
+            return DumpData.Count() > 0 ? Ok(DumpData) : NotFound();
         }
 
     }

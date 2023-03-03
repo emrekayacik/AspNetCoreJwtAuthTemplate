@@ -17,17 +17,17 @@ public class AuthController : ControllerBase
     }
     private string? GetAudience()
     {
-        return _configuration.GetValue<string>("Jwt:Audience");
+        return _configuration.GetValue<string>("Jwt:Audience") ?? "http://localhost:5000";
     }
 
     private string? GetIssuer()
     {
-        return _configuration.GetValue<string>("Jwt:Issuer");
+        return _configuration.GetValue<string>("Jwt:Issuer") ?? "http://localhost:5000";
     }
 
     private string? GetSigninKey()
     {
-        var signinKey = _configuration.GetValue<string>("Jwt:Key") ?? "";
+        var signinKey = _configuration.GetValue<string>("Jwt:Key") ?? "XofPVeLDNKVbzCVRpvSb";
         return signinKey;
     }
 
